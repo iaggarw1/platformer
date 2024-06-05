@@ -1,11 +1,11 @@
 [gd_scene load_steps=6 format=3 uid="uid://0xbyillpbxqr"]
 
-[ext_resource type="Texture2D" uid="uid://dyv6vted6hvpr" path="res://Green.png" id="1_ov0pi"]
-[ext_resource type="Texture2D" uid="uid://c6knidye4s6v" path="res://Terrain (16x16).png" id="2_sce6l"]
-[ext_resource type="PackedScene" uid="uid://codi7r07r7bx0" path="res://scenes/main_character.tscn" id="3_2oihi"]
+[ext_resource type="Texture2D" uid="uid://dyv6vted6hvpr" path="res://assets/background/Green.png" id="1_pui81"]
+[ext_resource type="Texture2D" uid="uid://c6knidye4s6v" path="res://assets/terrain/Terrain (16x16).png" id="2_d43gp"]
+[ext_resource type="PackedScene" uid="uid://codi7r07r7bx0" path="res://scenes/character/blue guy/main_character.tscn" id="3_4evwd"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ro4q5"]
-texture = ExtResource("2_sce6l")
+texture = ExtResource("2_d43gp")
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:0/0/physics_layer_0/angular_velocity = 0.0
@@ -456,7 +456,7 @@ texture = ExtResource("2_sce6l")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_ro4q5")
 
-[node name="Node" type="Node"]
+[node name="Level" type="Node"]
 
 [node name="TextureRect" type="TextureRect" parent="."]
 texture_filter = 1
@@ -465,7 +465,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("1_ov0pi")
+texture = ExtResource("1_pui81")
 stretch_mode = 1
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -474,5 +474,5 @@ tile_set = SubResource("TileSet_7tjah")
 format = 2
 layer_0/tile_data = PackedInt32Array(1703955, 458752, 0, 1703956, 458752, 0, 1703957, 458752, 0, 1703958, 458752, 0, 1703959, 458752, 0, 1703960, 458752, 0, 1703961, 458752, 0, 1703962, 458752, 0, 1703963, 458752, 0, 1703964, 458752, 0, 1703965, 458752, 0, 1703966, 458752, 0, 1703967, 458752, 0, 1703968, 458752, 0, 1703969, 458752, 0, 1703970, 458752, 0, 1703971, 458752, 0, 1703972, 458752, 0, 1703973, 458752, 0, 1703974, 458752, 0, 1703975, 458752, 0, 1703976, 458752, 0, 1703977, 458752, 0, 1703978, 458752, 0, 1703979, 458752, 0, 1703980, 458752, 0, 1703981, 458752, 0, 1703982, 458752, 0, 1703983, 458752, 0, 1703984, 458752, 0, 1703985, 458752, 0, 1703986, 458752, 0, 1703987, 458752, 0, 1703988, 458752, 0, 1703989, 458752, 0, 1703990, 458752, 0, 1703991, 524288, 0, 1703953, 393216, 0, 1769489, 393216, 1, 1703954, 458752, 0, 1769490, 458752, 1, 1769491, 458752, 1, 1769492, 458752, 1, 1769493, 458752, 1, 1769494, 458752, 1, 1769495, 458752, 1, 1769496, 458752, 1, 1769497, 458752, 1, 1769498, 458752, 1, 1769499, 458752, 1, 1769500, 458752, 1, 1769501, 458752, 1, 1769502, 458752, 1, 1769503, 458752, 1, 1769504, 458752, 1, 1769505, 458752, 1, 1769506, 458752, 1, 1769507, 458752, 1, 1769508, 458752, 1, 1769509, 458752, 1, 1769510, 458752, 1, 1769511, 458752, 1, 1769512, 458752, 1, 1769513, 458752, 1, 1769514, 458752, 1, 1769515, 458752, 1, 1769516, 458752, 1, 1769517, 458752, 1, 1769518, 458752, 1, 1769519, 458752, 1, 1769520, 458752, 1, 1769521, 458752, 1, 1769522, 458752, 1, 1769523, 458752, 1, 1769524, 458752, 1, 1769525, 458752, 1, 1769526, 458752, 1, 1769527, 524288, 1)
 
-[node name="CharacterBody2D" parent="." instance=ExtResource("3_2oihi")]
+[node name="CharacterBody2D" parent="." instance=ExtResource("3_4evwd")]
 position = Vector2(284, 400)
